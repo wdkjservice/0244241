@@ -1,0 +1,588 @@
+WinRAR - What's new in the latest version
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Version 5.80 beta 2
+   
+   1. Changes to the "Find file" operation and to the "i" command in mode
+      character:
+
+      a) The "Use all character tables" option, or the "t" option
+         for the "i" command, as well as using character encodings
+         ANSI, OEM and UTF-16 now also use UTF-8 encoding.
+      
+      b) Improved support for Unicode texts.
+
+      c) Improve search performance, especially non-search
+         case-sensitive.
+
+      d) The result of a hexadecimal search includes both the text in
+         clear that in hexadecimal for the found objects.
+
+   2. Progress progress bar for files and totals now comes
+      also displayed when you unpack from format archives
+      tar.bz2, tar.gz, tar.lz, tar.xz and tar.z.
+
+      Previous versions only displayed these bars for archives
+      in tar.bz2, tar.gz and tar.z. format No is displayed
+      slash if you unpack archives in tar.lz and tar.xz format
+
+   3. The "File List"> "File"> "Exact Size" option changes the
+      how to display the file size also for the
+      WinRAR status bar.
+   
+   4. Added support for another variant of the archive format
+      TAR.
+
+   5. Problems solved:
+
+      a) The WinRAR extraction command present in the contextual menu
+         Windows "Explorer" failed if it was in the RAR.INI file
+         defined the "-ag" option.
+   
+   
+   Version 5.80 beta 1
+   
+   1. The item "Keep the last access time of the source file"
+      in the "Timetables" section of the Storage dialog
+      allows you to keep the original Last Modified time.
+
+   2. The command line option -tsp can be used for
+      preserve the time of last access of an archived file. can he
+      be combined with other -ts options, such as:
+      "rar a -tsc -tsp file archive_name".
+
+   3. You can now combine multiple modifiers of the -ts option.
+      For example, you can enter -tscap instead of -tsc -tsa -tsp.
+
+   4. WinRAR can read the default options from the RAR.INI text file
+      which must be placed either in the same folder as WinRAR.exe or
+      in the% APPDATA% \ WinRAR folder.
+      This file must contain one instruction per line in one of the two
+      possible formats:
+
+       switches = <any space-separated RAR option>
+       switches_ <command> = <any space-separated RAR option>
+
+      The first sets the options for all commands, the second for a
+      specific command.
+
+      Some examples:
+       switches = -m5 -s
+       switches_x = -o +
+
+      Most of the options defined in the RAR.INI file come
+      used in command line mode. Other options instead
+      they are applied both in command line and in that
+      graphics.
+
+   5. The command-line option -agf <default_format> specifies the
+      default format for the -ag option. It has value only if inserted
+      in the RAR.INI configuration file or in the RAR environment variable.
+      For example, if you insert the RAR in the environment variable
+      definition "-agfYYYY-MMM-DD", in the command line we can
+      simply enter -ag to use the definition
+      of the format "YYYY-MMM-DD".
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.5 beta (build 1016) (October 2017)
+---------------------------------------------------------------------
+- BUGFIX: Super large groups now show up in the 'All groups' tab;
+- Some small performance improvements
+
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.4 beta 2 (build 1014) (April 2017)
+---------------------------------------------------------------------
+- Some small bugfixes and improvements
+
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.4 beta (build 1012) (March 2017)
+---------------------------------------------------------------------
+- BUGFIX: 'No articles for this Grab' error message fixed for newer binaries.
+
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.3 beta (build 1010) (December 2014)
+---------------------------------------------------------------------
+- BUGFIX: SSL connection problem should be fixed;
+- Upgraded OpenSSL library to 1.0.1j;
+- Processing PAR files is a lot faster now;
+- Upgraded the bundled par2 version ;
+- Upgraded the bundled unrar version to 5.20.
+
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.2 beta 6 (build 1008) (October 2011)
+---------------------------------------------------------------------
+- BUGFIX: Fixed the 2001 error that appeared while searching for certain characters in the GrabIt Search;
+- BUGFIX: Some files appeared to be downloaded up to 99% while not being downloaded them at all.
+                   
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.2 beta 5 (build 1007) (September 2011)
+---------------------------------------------------------------------
+- Maximum number of connections increased to 50;
+- Upgraded the SSL library to version 0.9.8r;
+- Added alternating row colors to all the views (can be disabled from the Preferences->Visual panel);
+- Most representations of alt.binaries newsgroups are now abbreviated to a.b;
+- All file sizes are now reported in KB, MB, GB or TB instead of bytes;
+- Added an indicator that appears whenever data is being retrieved from the GrabIt Search server;
+- Implemented a new configuration wizard for first time users;
+- Implemented a new preferences screen;
+- Improved SSL stability;
+- Improved Windows 7 stability;
+- BUGFIX: NZB file association now works in Windows 7 (installer option, no longer available in Preferences->Interface panel);
+- BUGFIX: Browseable grouplist can now be updated under Windows 7;
+- BUGFIX: Fixed the 'Abnormal program termination' error that appeared on some heavy loaded systems;
+- BUGFIX: Solved a problem that stopped the Repair and Extract from working on some systems.
+
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.2 beta 4 (build 997) (April 2009)
+---------------------------------------------------------------------
+- BUGFIX: Removed a stack overflow vulnerability in the NZB importer that Niels Teusink discovered
+- BUGFIX: GrabIt no longer disconnects on every server error, lowering the possibility of a 'Connection limit reached' error.
+
+--------------------------------------------------------------------
+  Changes in GrabIt 1.7.2 beta 3 (build 996) (September 2008)
+---------------------------------------------------------------------
+- BUGFIX: Files in the Download folder in subfolder "Abc" are now extracted to the Extract folder in subfolder "Abc"
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.7.2 beta 2 (build 994) (August 2008)
+---------------------------------------------------------------------
+- Increased the maximum number of connections per server to 32 again;
+- BUGFIX: Added msvcr71.dll to the installation folder;
+- BUGFIX: Fixed the missing threads scrollbar on lower screen resolutions;
+- GrabIt now defaults to smaller icons for the toolbar (can be changed: Edit->Preferences->Visual->Use small icons);
+- Pruning of cache files now happens in the background;
+- Removed BNS support from GrabIt as the format is no longer in use;
+- Tweaked the new decoder code to improve large file performance. 
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.7.2 beta 1 (build 988) (August 2008)
+---------------------------------------------------------------------
+- Added support for SSL server connections;
+- Rewrote the yEnc decoder for improved speed;
+- Decoder and Repair and Extract now run at the same time to stop the 'Waiting to decode' list from growing;
+- A lot of small performance enhancements;
+- BUGFIX: Some uuEncoded binaries imported via the NZB importer where corrupted or being saved as text files;
+- BUGFIX: Resuming a batch with decoding binaries that are already decoded no longer results in a hanging decoding thread;
+- When there is only one server profile, the NZB importer will just import a NZB file when it is double clicked instead of showing the import window;
+- BUGFIX: GrabIt now detects when the 'gobbledygook bug' appears and resets the connection before moving on to the next download item;
+- Increased the GrabIt Usenet browser history to 90 days of headers;
+- New layout always shows the batch statistics;
+- GrabIt can now continue to download binaries with an 'Article not found' error, increasing the possibility to complete a binary with a PAR set;
+- BUGFIX: 'Error downloading article' bug;
+- BUGFIX: A thread being activated while GrabIt is paused will only start downloading after GrabIt is unpaused;
+- BUGFIX: No more flickering status messages while GrabIt is paused;
+- It is now possible to Repair and Extract to a folder outside of the Download folder;
+- It is now possible to disable the creation of a new folder for each RAR set;
+- BUGFIX: Repair and Extract no longer leaves behind .1 files from repaired file sets;
+- The Pause button now offers the ability to automatically resume after a preset time;
+- It is now possible to Shutdown, Hibernate or Suspend the system or Close GrabIt after the batch has been processed.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.7.1 beta (build 960) (May 2007)
+---------------------------------------------------------------------
+- It is now possible to disable the new RepairIt and ExtractIt technology.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.7.0 beta (build 959) (May 2007)
+---------------------------------------------------------------------
+- New RepairIt and ExtractIt technology automatically checks, repairs and extracts downloaded binaries;
+- Introduction of a new GrabIt Search method that enables you to find partial words (searching for 'rab' will find binaries containing 'rab', 'rabbit', 'grabit' and 'arab');
+- New default Cache and Download folder locations for better Vista compatibility;
+- The 1.7 generation is now fully compatible with Windows 9x again;
+- Added a 'Create Folder' button to all folder select dialog boxes;
+- Search and Browse Usenet code tweaked for better compatibility with some firewall software (eg. McAfee 2007 and Avast);
+- Some small interface changes;
+- BUGFIX: Fixed the problem that caused some downloads getting stuck in the cache folder without being decoded;
+- It is now possible to use the GrabIt Search over port 443;
+- 'Article not found' errors can now be ignored to improve the chances of getting enough blocks for a PAR2 repair.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.6.2 beta (build 940) (June 2006)
+---------------------------------------------------------------------
+- Fixed the decoding failed bug;
+- 'Change group before downloading article' is now a per server setting (can solve some 'article not on server' problems);
+- Some minor interface fixes.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.6.1 beta (build 936) (May 2006)
+---------------------------------------------------------------------
+- The download thread checkboxes are back with a vengeance (32 of them!);
+- A new option in the configuration screen makes it possible to choose if GrabIt needs to change groups before downloading articles (makes it possible to download articles from groups that are not on your server);
+- Fixed the problem that would freeze the batch tab after trying to remove a column;
+- Increased the maximum amount of browseable days to 30;
+- Fixed the progress bar for group updates;
+- Fixed the download speed graph so it no longer drops to 0KB/s and then jumps to twice the actual download speed on slow connections;
+- Fixed the missing files bug;
+- Changed some of the fonts to true type fonts to help people with irregular font settings;
+- Fixed the flickering in the batch tab while the batch was paused;
+- Maximum amount of connections in the server properties can now be set to 0.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.6.0 beta (build 928) (March 2006)
+---------------------------------------------------------------------
+- New GrabIt Usenet Browser technology enables the user to instantly see and download the latest binaries in a group without downloading headers;
+- Increased the maximum amount of download threads to 32 (per server limit can be changed from inside the server properties window);
+- Using the Download with other server option in the batch will start downloading from the other server immediately;
+- Batch progress bars are now located inside the binary list;
+- Fixed the bug that resulted in a lot of empty txt files after importing NZB files with binaries that were not on the server;
+- Fixed the bug that resulted in a lot of 'Article not on server' errors (mostly for Versatel and Zonnet users);
+- Redesigned the binary decoding process to generate less disk activity;
+- GrabIt was rebuilt in a new development environment for better speed and compatibility;
+- A lot of small bug fixes.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.5.3 beta (build 909) (May 2005)
+---------------------------------------------------------------------
+- Unlimited GrabIt Search access is now a feature for registered users only;
+- GrabIt no longer selects a group to download using a message-id;
+- Added a confirmation pop-up between hitting the 'clear history' button and actually clearing the history;
+- Removed the double dot in the Incomplete Grab extension;
+- Subscribed groups appear bold in the All Groups list;
+- GrabIt Search information messages are now displayed in a pop-up instead of the search results;
+- While pausing due to lack of disk space, GrabIt now automatically resumes downloading when enough disk space becomes available;
+- Fixed the 'Error while downloading article' problem that is also known as the 'gobbledygook bug' in the GrabIt community;
+- It is now possible to toggle if '(Incomplete Grab)' should be added to incomplete files (enabled by default);
+- Individual parts from an Incomplete Grab will not longer be removed so the binary can be completed using another server.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.5.2 beta (build 902) (March 2005)
+---------------------------------------------------------------------
+- It is now possible to set the maximum amount of headers per group in the History tab of the Preferences window (Default setting 500000 headers which is about 33 hours in the busy groups.)
+  NOTE! Change the above setting before updating your groups if you want more retention!
+- Switching a download between servers from the Batch tab works again;
+- No more endless 'download aborted' messages after removing an item from the batch that was already downloading;
+- Repaired and enabled the NZB en BNS file association routines;
+- It is no longer possible to start multiple instances of GrabIt;
+- Fixed the large font overlapping issue;
+- The status of the Subscribed Groups view (hidden or not) is now saved between sessions;
+- Information from groups that haven't been used / updated for a long time will be purged (period can be altered in preferences screen);
+- A GrabIt Search history is now kept (can be disabled from the preferences screen);
+- Grab to Folder has been added to the GrabIt Search download possibilities;
+- Fixed a bug that stopped the All Groups list from refreshing in some situations;
+- Better behavior in Wine (http://www.winehq.com/);
+- Fixed a problem where not all the visible / invisible columns in the Batch tab where remembered between GrabIt sessions;
+- GrabIt search tab remembers most settings between GrabIt sessions;
+- GrabIt search tab looks and behaves more like the Articles tab;
+- Fixed the 'Error while downloading article' followed by garbage error messages that froze the download thread. 
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.5.1 beta (build 888) (November 2004)
+---------------------------------------------------------------------
+- Progress indicators work again for group updates;
+- The Grab button in the Search tab will now use the last profile used to grab from a search result;
+- If an ArticleID is available it will now be used instead of the MessageID.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.5.0 beta (build 885) (November 2004)
+---------------------------------------------------------------------
+- New cache format to incorporate Message-IDs (Note: Cache files are NOT compatible with previous releases!);
+- Tightened the filename filter a bit to solve some illegal file/folder name issues;
+- Improved error feedback in Read article form;
+- New date format conversion routine can also convert dates with short year notation (e.g. 03 for 2003);
+- Solved the exception errors that some people reported while closing GrabIt;
+- Batch Import button in Batch screen allows the import of NZB files directly into the batch;
+- Batch Import button in Batch screen allows the import of BNS (binnews.com) files directly into the batch;
+- Auto shutdown feature now waits until all items are decoded / processed before shutting down the system;
+- Tweaked the compression of the cache file to optimize for speed instead of size;
+- New 'Download Folder' button in the batch tab will open your download folder;
+- Some general optimizations;
+- Changed the main font of the controls in the application to Arial;
+- Added the possibility to change the font of the views (Groups, Articles, Batch, All Groups);
+- Added 'Grab to folder first' and 'Grab with prefix first';
+- Added a new option in the batch popup menu to download a batch item from a different server;
+- Incomplete items are now saved with .(Incomplete Grab). in the filename.  Peter B. Clements added support for this into Quickpar 0.9 so these files will be recognized;
+- GrabIt Search makes it possible to search Usenet without downloading headers or using XPAT;
+- The connection to a server is no longer closed after a minor error (e.g. article not on server).
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.7 beta (build 856) (July 2003)
+---------------------------------------------------------------------
+- Fixed the broken filter buttons (only surfaced on some systems);
+- Removed the (not working reply to menu item).
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.7 beta (July 2003)
+---------------------------------------------------------------------
+- Improved error handling / reporting;
+- Disconnects are now properly handled (graceful disconnects);
+- TrayIcon will now automatically restore itself when explorer.exe crashes;
+- Some general optimizations;
+- Automatic system shutdown feature that can turn off your computer when the batch is finished;
+- New control options in the tray icon pop-up;
+- Group updates now show the name of the group being updated in the subject field in the batch screen;
+- Added 'Update group headers' options in the server right-click pop-up menu;
+- The download thread uses a lot less memory while doing an incremental group update;
+- Enabled the possibility to download incomplete binaries (configuration option / right mouse click option);
+- Right clicking on an article now offers the option to copy the article subject to the clipboard;
+- Made changes in the group analyzer code to kill the corrupting bot-posts;
+- 'Grab to folder' and 'Grab with prefix' will now remember the last entered folder / prefix.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.6 beta (February 2003)
+---------------------------------------------------------------------
+- Fixed the 'will not remember group settings' bug;
+- Server profile names are now checked for illegal characters;
+- Server profiles now have a more robust standard setting (this should fix most connection problems);
+- Optimized the Remove from batch routines (572 times faster!);
+- Added the server property 'Maximum allowed connections';
+- The subscribed groups panel can now be collapsed to get more horizontal space (shortcut: CTRL-I).
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.5 beta (January 2003)
+---------------------------------------------------------------------
+- Fixed the 'article not on server' bug;
+- A progress pop-up will appear while changing groups;
+- Replaced the servers and groups selection area with a hierarchical tree;
+- New setting allows the decoder to run with priority 'Idle' so it will use less CPU time when you need your CPU for other applications;
+- Using the Apply button in the preferences screen will now also reflect graphical changes in the main window;
+- Fixed the 'invert selection' bug;
+- Fixed the 'yDecoder stops working' bug;
+- Downloading text files will no longer overwrite any existing text file with the same name;
+- Downloading yEnc encoded binaries will no longer overwrite any existing file with the same name;
+- New installation software;
+- All articles are marked New after a full update;
+- Fixed the inverted order of the 'Grab first' option
+- Fixed the 'Decoder hangs' bug;
+- Popup menus will no longer popup when there is no item selected;
+- Retry and Timeout values are now per server settings;
+- New dog bone icons (created by Stephen Hunter).
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.4 beta (October 2002)
+---------------------------------------------------------------------
+- Fixed the 'no resize' bug in the batch screen;
+- Fixed the 'no timeout' bug in the socket layer;
+- Fixed the 'no scrollbar' bug;
+- Fixed the exception errors on Windows 9x machines;
+- Added the possibility to Post articles (text only);
+- Faster find option;
+- The filter in the 'All groups' tab is much faster;
+- Faster group processing code;
+- Fixed the 'some articles won't be saved as text' bug;
+- Added shortcuts to most functions (visible in pop-up menu items);
+- Added a free disk space indicator in the status bar;
+- Fixed the 'no active item after delete' bug;
+- Fixed the 'transparent subscribed group list border' bug;
+- Faster deleting of items in Article and Batch view;
+- Faster start-up;
+- The error 'Wrong article size' will no longer be retried by the 'automatically retry items in batch' feature.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.3 beta (September 2002)
+---------------------------------------------------------------------
+- New interface graphics! (created by Sami Mannila);
+- XP style support;
+- The Grab button caption now reflects the selected function (e.g. 'Grab all' or 'Grab to folder');
+- Added four extra download threads;
+- Added the ability to only show new items;
+- Automatically resized columns will now be at least the width of their header-text;
+- Pressing F5 will now remove the find filter;
+- The filename filter will now only remove the following characters: \/:*?"<>|
+- New (smaller and faster) cache format (not backwards compatible!);
+- If 'Auto save batch' is enabled and GrabIt is starting, the batch backup file will no longer be deleted after loading the batch;
+- New interface options to skip the resume / save batch questions while opening / closing the application;
+- Faster headers processing routine (speed increases up to 296% have been reported on large groups);
+- Enhanced the uudecoder with error detection routines that will automatically detect and ignore incorrect data lines;
+- Better yEnc detection;
+- Grab with prefix now works with yEnc encoded binaries;
+- Better cache cleanup after a failed or aborted Group update;
+- Added the possibility to change how often a 'Check for update' will be performed.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.2 beta (March 2002)
+---------------------------------------------------------------------
+- Free disc space protection can now be turned off;
+- Article hints now show a user-defined amount of information;
+- Hovering over a group name in the subscribed group list shows the date and time the group was last updated;
+- Spaces are now removed before and after filenames and folder names;
+- Fixed the lockup problem with the move to top and move to end buttons;
+- Fixed the deleted headers come back after incremental update issue;
+- Changed the color combination of the thread progress bars to blue / green;
+- Single part items now have white text when selected (used to be blue);
+207.180.208.205:8899/gtg#HTML
+- Fixed the slow batch screen update;
+- The position of the columns in the article and batch tabs can be altered and will be saved;
+- It is now possible to hide columns in the article and batch tabs;
+- Fixed the bug that caused the + sign not to appear after an incremental update;
+- Fixed the statistics freeze problem;
+- Fixed the 'abnormal program termination' error that occurred when the batch was filled with a lot of small articles;
+- Some small internal changes to increase performance.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.4.1 beta (February 2002)
+---------------------------------------------------------------------
+- yEnc support
+- New faster group handling routines. The only old code still in there is the 'processing headers' routine which is still very slow and uses way too much memory;
+- Better binary recognition routine. Less incomplete binaries with descriptions like (1-17,17-21 of 21) should appear;
+- Added a cache cleanup routine that will remove all cache files older then X days;
+- The file system will now be checked for free disk space while downloading. When there is not enough free disk space left on the file system GrabIt will automatically pause the batch and notify the user.
+- Changed the function of the cache folder. It now contains separate folders for groups, articles and temporary files;
+- The group list can now be sorted by article count;
+- Articles view can now use font colors and styles to reflect item status;
+- New items will now show up in the articles view with a + sign in the status column;
+- Statistics show more stable values;
+- Sorting is now case insensitive;
+- A new Grab button with all possible grab options;
+- Grab to folder option;
+- It is now possible to select between single-click or double-click to restore GrabIt from the tray;
+- The 'Save batch' routine didn't work in some situations. This should be fixed now;
+- Downloaded articles without binaries are now saved with the article subject as the filename instead of the article number;
+- New preferences window;
+- Files created by GrabIt will only contain characters in the following list: "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ !@$%^&()_+-=[]{};,.~`". When the decode process detects any other character in the filename, it will remove the character;
+- New cache file format. This means that old cache files won't work anymore!
+- Some small bug fixes and cosmetic changes.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.3.6 beta (July 2001)
+---------------------------------------------------------------------
+- New freeware license;
+- Fixed some bugs in the download and decode routines that caused corrupt binaries with certain articles;
+- More accurate statistics;
+- A thread will now close the connection to the server if no new entries can be found in the batch;
+- Pressing the spacebar will now add the focused article to the batch and focus the next article in the list. This way you can quickly select articles by holding the spacebar down;
+- It is now possible to prefix the filenames of grabbed binaries with a user-defined string;
+- Changed the menu of GrabIt into a standard File|Edit|View|Help menu;
+- Added 'Save batch' and 'Load batch' options to the menu;
+- If an error occurs during a group update, GrabIt will now continue the download by converting the batch entry into an incremental update that will download the remaining headers;
+- Fixed the http proxy checker so systems with an http proxy can also use the auto-update-detector;
+- Changed the pause button to include the universal pause symbol;
+- Batch can now be saved automatically every X minutes;
+- Sort by date button in the batch tab will move older articles to the top of the batch so they will download sooner;
+- A new (smaller) set of icons for the toolbar has been added. It is possible to switch between icon sets in the preferences window;
+- Moved the move batch items buttons from the main toolbar to a new toolbar in the batch tab.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.3.5 beta  (June 2001)
+---------------------------------------------------------------------
+- Cache compression! Cache files have shrunk to 15% of their original size;
+- Headers processing code has been optimized. Speed increases from 71% up to 642% have been reported by beta-testers;
+- Fixed the bug that would load the Articles list twice on some occasions;
+- Changed the layout of the From field so sorting on author makes more sense;
+- GrabIt now searches for HTTP proxy settings in Internet Explorer and uses these settings to check for updated versions;
+- Disabled the batch-tracking option because it uses too much CPU time and causes errors while shutting down;
+- GrabIt will now resume after an Internet disconnect;
+- Added a progress bar to the tray-icon.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.3.4 beta  (May 2001)
+---------------------------------------------------------------------
+- Fixed the bug that would stop downloading when there was no group selected.
+
+---------------------------------------------------------------------
+  Changes in GrabIt 1.3.3 beta  (May 2001)
+---------------------------------------------------------------------
+- Layout changes;
+- Added 'Exact resume'. GrabIt will now resume downloading a multipart from the article it left off;
+- The Pause button is back;
+- Added a warning to let the user know it is not recommended to run multiple instances of GrabIt;
+- Improved the download routine a lot. (Error checking, error correcting, faster code);
+- GrabIt no longer disconnects between binary downloads. This speeds up the download of small files considerably.
+
+---------------------------------------------------------------------
+  Bug fixes and new features in GrabIt 1.3.2 beta (May 2001)
+---------------------------------------------------------------------
+- Removed the 'News' option to tackle the stack overflow problems some Windows 9x users where experiencing;
+- GrabIt will now check once a day for an updated version. If an updated version is found the user will be notified;
+- Added a new filter to the all groups tab. It hides articles that contain fewer articles then specified;
+- Fixed some 'communication error bugs';
+- Corrected some spelling errors;
+- Added a new feature called Batch-tracking. This will make it possible to always resume the batch, even after a system crash;
+- The download engine will now keep all articles separately on the file system until the decoding process starts;
+- Fixed a huge memory leak that would cause GrabIt to use more and more memory every time a group was updated;
+- Improved the automatically resize columns feature;
+- Added a download speed performance monitor.
+
+---------------------------------------------------------------------
+  Bug fixes and new features in GrabIt 1.3.1 beta (February 2001)
+---------------------------------------------------------------------
+- A total rewrite of the download engine. This fixed some bugs (some of which I didn't know existed) and enhanced performance;
+- Group updates and newsgroups listings are now being processed by the batch;
+- All GrabIt windows should now open in the middle of your active GrabIt window, not in the middle of your desktop;
+- Tray icon shows hint;
+- Popup menu added to Tray icon;
+- The ability to clear the find filter;
+- The 'Grab first' button is back;
+- A 'Grab last' button;
+- Read article form allows copying from the body (copy & paste);
+- Find feature offers more options;
+- Not restoring properly from tray when maximized bug has been fixed;
+- Added the ability to stop the Articles tab from being renamed to the active group;
+- Pressing 'Grab all' will show a confirmation box before adding all items to the batch.
+
+---------------------------------------------------------------------
+  Bug fixes and new features in GrabIt 1.2.1 beta (January 2001)
+---------------------------------------------------------------------
+- Removed the ads! For now I replaced it with a static image until I find another purpose for this window space;
+- Multiple server support! Probably the most requested feature has been implemented. No fancy stuff yet, just the possibility to work with an unlimited amount of servers;
+- Minimize to tray feature;
+- Changed the width of the buttons so all buttons are always visible;
+- Replaced the 'Grab first' button with a 'Move up' and a 'Move down' button to change an items position in the batch. 'Grab first' is still available by right-clicking on an item;
+- 'Grab first' option in the pop-up menu of the first tab;
+- Deleting items from the batch is much faster;
+- Updating the article view with a large batch is much faster;
+- Find will now hide the items that do not match the search key;
+- Fixed another bug in the update group routine;
+- Application won't freeze anymore when headers are being analyzed during shutdown;
+- Removed the window movement restrictions.
+
+---------------------------------------------------------------------
+  Bug fixes and new features in GrabIt 1.1.3 beta (January 2001)
+---------------------------------------------------------------------
+- GrabIt 1.1.2 introduced the 'empty list after group update' bug again. I now solved it for good. The problem is that some servers sometimes just stop responding. GrabIt detected this as an error and would shutdown the download routine without parsing the data. Now it will parse the headers that were already received. Incremental update can then get the rest of the headers;
+- Fixed the freezing problem during shutdown;
+- Fixed the corrupt binary problem that still occurred on some servers.
+
+---------------------------------------------------------------------
+  Bug fixes and new features in GrabIt 1.1.2 beta (January 2001)
+---------------------------------------------------------------------
+- Fixed the problem with the corrupt binaries.
+
+---------------------------------------------------------------------
+  Bug fixes and new features in GrabIt 1.1.1 beta (January 2001)
+---------------------------------------------------------------------
+- News page will automatically be shown every two weeks;
+- Active newsgroup on shutdown will be remembered and shown on startup;
+- Fixed another bug in the 'update group' routine. All 'empty list after update' bugs should be solved now;
+- Rewrote a small part of the socket routine. Downloads will take less CPU time and the new code is more stable;
+- Download statistics should be more accurate now;
+- Download speed will always be displayed as KB/s;
+- GrabIt won't freeze anymore when download batch is paused during shutdown.
+
+---------------------------------------------------------------------
+  Bug fixes and new features in GrabIt 1.0.2 beta (First public release, October 2000)
+---------------------------------------------------------------------
+- The news feature checks the Internet for GrabIt updates / changes;
+- Fixed the 'empty list' bug with Newsguy and AT&T@home news servers;
+- Made some minor cosmetic changes;
+- Tweaked default settings for better overall compatibility.
+
+
+   6. The -ed and -e + d options can be used for managing
+      an archive for any operating system. In versions
+      previous RAR for Windows could not use it for RAR archives
+      created under Unix and vice versa.
+
+   7. Previously the "Check" command failed the integrity check
+      for archives that stored alternative NTFS and data streams
+      reported a message "Unknown data format
+      header "if the size of this data exceeded 16MB.
+      This limitation has been removed.
+   
+   8. Archiving speed for large streams has been improved
+      alternative NTFS data with multi-processor CPU.
+   
+   9. "Find" command:
+
+      a) when extracting encrypted files directly from the panel
+         "Search result" was asked for the keyword for each
+         files, even if they came from the same archive. Now the request
+         it is done only once for all the files of a single
+         archive.
+
+      b) The keyboard shortcut Ctrl + A selects all the files in
+        "Search result".
+
+  10. Archive display panel:
+
+      a) Previous versions did not allow you to close WinRAR a
+         followed by typing Ctrl + W if it was open in
+         view the comment of an archive
